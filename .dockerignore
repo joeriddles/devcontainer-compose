@@ -1,0 +1,5 @@
+.devcontainer
+.git
+docker-compose.yml
+docker-compose.override.yml
+README.md

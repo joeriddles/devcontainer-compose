@@ -1,5 +1,12 @@
 services:
   app:
-    image: python:3.10-bullseye
-    entrypoint: python
-    command: -c "print('${HELLO_WORLD}')"
+    image: devcontainer-compose:app
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - HELLO_WORLD=${HELLO_WORLD}
+
+  other_app:
+    image: devcontainer-compose:app
+    command: python -m app ${HELLO_WORLD}

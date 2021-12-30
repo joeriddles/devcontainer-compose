@@ -1,6 +1,6 @@
 services:
   code:
-    image: devcontainer-compose:latest
+    image: devcontainer-compose:code
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
