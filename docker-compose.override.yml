@@ -1,0 +1,13 @@
+services:
+  code:
+    image: devcontainer-compose:latest
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        VARIANT: "3.10-bullseye"
+        NODE_VERSION: "none"
+    volumes:
+      - ./:/workspace:cached
+    command: sleep infinity
+    user: vscode

@@ -1,0 +1,5 @@
+services:
+  app:
+    image: python:3.10-bullseye
+    entrypoint: python
+    command: -c "print('${HELLO_WORLD}')"
