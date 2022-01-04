@@ -3,8 +3,8 @@
 {
 	"name": "Python 3",
     "dockerComposeFile": [
-        "../docker-compose.yml",
-        "../docker-compose.override.yml"
+        "../docker/docker-compose.yml",
+        "../docker/docker-compose.override.yml"
     ],
     "service": "code",
     "workspaceFolder": "/workspace",

@@ -10,3 +10,7 @@ services:
   other_app:
     image: devcontainer-compose:app
     command: python -m app ${HELLO_WORLD}
+
+  redis:
+    image: redis:6
+    command: redis-server --requirepass ${REDIS_PASSWORD}

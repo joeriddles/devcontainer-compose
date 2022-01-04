@@ -2,6 +2,8 @@
 
 This repo demonstrates how to setup a VS Code devcontainer using multiple `docker-compose` files.
 
+**`.env` file _must_ be in the same directory as the `docker-compose` files. See this [issue](https://github.com/microsoft/vscode-remote-release/issues/2706) for more info**. In this repo, we have duplicated `.env` from the base directory to also the subdirectory `/docker`.
+
 ## `docker-compose` Services
 
 `code` is the container that VS Code will attach to. We mount our source code into the container.
